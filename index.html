@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot with Data Addition</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Welcome to Chatbot Training</h1>
+    </div>
+  </header>
+
+  <main>
+    <div id="chatbot-container" class="chat-container">
+      <!-- Chatbot messages will appear here -->
+    </div>
+
+    <div class="input-section">
+      <input type="text" id="user-input" class="user-input" placeholder="Type your question...">
+      <button onclick="askQuestion()" class="ask-btn">Ask</button>
+    </div>
+
+    <hr>
+
+    <div class="data-addition">
+      <h2>Add Data</h2>
+      <form id="data-form">
+        <label for="key">Key:</label>
+        <input type="text" id="key" name="key" class="input-field" required>
+        <br>
+        <label for="value">Value:</label>
+        <input type="text" id="value" name="value" class="input-field" required>
+        <br>
+        <button type="submit" onclick="addData(event)" class="add-btn">Add</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
